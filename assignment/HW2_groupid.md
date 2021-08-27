@@ -15,7 +15,7 @@ mean(survey$Age) #20.37451
 
 3.) From cats , the maximum body weight is 3.9 kg.
 ```{R}
-max(cats$Bwt) # 3.9
+max(cats$Bwt) #3.9
 ```
 
 4.) 

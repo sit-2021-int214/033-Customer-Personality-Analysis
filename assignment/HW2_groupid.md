@@ -13,6 +13,21 @@ Code here
 Code here
 ```
 
+3.) 
+```{R}
+Code here
+```
+
+4.) 
+```{R}
+Code here
+```
+
+5.) 
+```{R}
+Code here
+```
+
 
 ### Team: ITRIO
 1.ชือนายภัทรพล มรรคหิรัญ StudentID: 63130500091

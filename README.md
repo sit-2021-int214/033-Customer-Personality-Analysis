@@ -12,7 +12,7 @@ Datasets from: [NAME](link)
 ### Team: ITIRO
 1. ชื่อนายภัทรพล มรรคหิรัญ      StudentID: 63130500091
 2. ชื่อนายวริศชัย  สุรชัยธนวัฒน์   StudentID: 63130500103
-3. ชื่อ นามสกุล     StudentID: 63130500xxx
+3. ชื่อนายณัชภัค ไทยประสิทธิ์     StudentID: 63130500153
 
 
 ### Instructor

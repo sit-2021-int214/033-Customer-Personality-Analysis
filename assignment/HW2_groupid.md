@@ -14,10 +14,7 @@ Code here
 ```
 
 
-### Team: xxxxxxx
-
-1. ชื่อ นามสกุล     StudentID: 63130500xxx
-2. ชื่อ นามสกุล     StudentID: 63130500xxx
-3. ชื่อ นามสกุล     StudentID: 63130500xxx
-4. ชื่อ นามสกุล     StudentID: 63130500xxx
-5. ชื่อ นามสกุล     StudentID: 63130500xxx
+### Team: ITRIO
+1.ชืjอนายภัทรพล มรรคหิรัญ StudentID: 63130500091
+2.ชื่อนายวริศชัย สุรชัยธนวัฒน์ StudentID: 63130500103
+3.ชื่อ นามสกุล     StudentID: 63130500xxx

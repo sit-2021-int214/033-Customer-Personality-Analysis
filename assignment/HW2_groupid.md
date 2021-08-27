@@ -10,12 +10,12 @@ Code here
 
 2.) From survey, the average age is 20 years old.
 ```{R}
-mean(survey$Age)
+mean(survey$Age) #20.37451
 ```
 
-3.) 
+3.) From cats , the maximum body weight is 3.9 kg.
 ```{R}
-Code here
+max(cats$Bwt) # 3.9
 ```
 
 4.) 

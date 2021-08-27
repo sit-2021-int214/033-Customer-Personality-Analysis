@@ -8,9 +8,9 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 Code here
 ```
 
-2.) Descriptive statistics Statement
+2.) From survey, the average age is 20 years old.
 ```{R}
-Code here
+mean(survey$Age)
 ```
 
 3.) 

@@ -19,9 +19,9 @@ mean(survey$Age) #20.37451
 max(cats$Bwt) #3.9
 ```
 
-4.) 
+4.) From cats , the most common body weight is 2.2 kg. and the number of cats is 14.
 ```{R}
-Code here
+Mode(cats$Bwt) #2.2 kg. (number of cats : 14)
 ```
 
 5.) 

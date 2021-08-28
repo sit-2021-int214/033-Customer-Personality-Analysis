@@ -5,7 +5,7 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 1.) From survey, most students use right hand writing.
 ```{R}
-summary(survey$W.Hnd) # Left: 18 Right: 218  NA's: 1 // most students use "right hand" writing.
+summary(survey$W.Hnd) # Left: 18 Right: 218  NA's: 1 # most students use "right hand" writing.
    
 ```
 

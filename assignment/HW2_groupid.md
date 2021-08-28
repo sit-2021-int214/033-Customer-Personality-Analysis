@@ -9,11 +9,6 @@ summary(survey$W.Hnd) # Left: 18 Right: 218  NA's: 1 # most students use "right 
    
 ```
 
-คำอธิบาย
-```{R}
-  
-```
-
 2.) From survey, the average age is 20 years old.
 ```{R}
 mean(survey$Age) #20.37451

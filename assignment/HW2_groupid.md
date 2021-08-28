@@ -5,8 +5,7 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 1.) From survey, most students use right hand writing.
 ```{R}
-summary(survey$W.Hnd) # Left: 18 Right: 218  NA's: 1 # most students use "right hand" writing.
-   
+summary(survey$W.Hnd) # Left: 18 Right: 218  NA's: 1 # most students use "right hand" writing. 
 ```
 
 2.) From survey, the average age is 20 years old.
@@ -27,7 +26,6 @@ Mode(cats$Bwt) #2.2 kg. (number of cats : 14)
 5.) From survey , the average height of all students is 172 cm.
 ```{R}
 mean(survey$Height,na.rm = T) #172.3809
-
 ```
 
 

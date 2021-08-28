@@ -3,9 +3,10 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Answer
 
-1.) From survey, most students use left hand writing.
+1.) From survey, most students use right hand writing.
 ```{R}
-Code here
+summary(survey$W.Hnd) # Left: 18 Right: 218  NA's: 1 // most students use "right hand" writing.
+   
 ```
 
 2.) From survey, the average age is 20 years old.

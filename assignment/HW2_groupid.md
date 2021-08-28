@@ -24,9 +24,10 @@ max(cats$Bwt) #3.9
 Mode(cats$Bwt) #2.2 kg. (number of cats : 14)
 ```
 
-5.) 
+5.) From survey , the average height of all students is 172 cm.
 ```{R}
-Code here
+mean(survey$Height,na.rm = T) #172.3809
+
 ```
 
 

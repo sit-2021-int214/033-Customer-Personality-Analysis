@@ -4,27 +4,27 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 ### Answer
 
 1.) From survey, most students use right hand writing.
-```{R}
+```ruby
 summary(survey$W.Hnd) # Left: 18 Right: 218  NA's: 1 # most students use "right hand" writing. 
 ```
 
 2.) From survey, the average age is 20 years old.
-```{R}
+```ruby
 mean(survey$Age) #20.37451
 ```
 
 3.) From cats , the maximum body weight is 3.9 kg.
-```{R}
+```ruby
 max(cats$Bwt) #3.9
 ```
 
 4.) From cats , the most common body weight is 2.2 kg. and the number of cats in this body weight is 14.
-```{R}
+```ruby
 Mode(cats$Bwt) #2.2 kg. (number of cats : 14)
 ```
 
 5.) From survey , the average height of all students is 172 cm.
-```{R}
+```ruby
 mean(survey$Height,na.rm = T) #172.3809
 ```
 

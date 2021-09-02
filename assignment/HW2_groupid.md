@@ -28,6 +28,16 @@ Mode(cats$Bwt) #2.2 kg. (number of cats : 14)
 mean(survey$Height,na.rm = T) #172.3809
 ```
 
+6.) From survey , the average age of female is around 20 years old.
+```ruby
+Sex <- c("Female")
+MaleAge <- c(survey$Age[survey$Sex == 'Female'])
+X <- mean(MaleAge, na.rm = TRUE)
+Age <- c(X)
+table <- data.frame(Sex,Age)
+View(table)
+```
+
 
 ### Team: ITRIO
 1.ชือนายภัทรพล มรรคหิรัญ StudentID: 63130500091

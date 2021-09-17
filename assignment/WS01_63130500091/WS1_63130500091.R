@@ -3,7 +3,8 @@
 library(dplyr)
 
 # Explore
-
+SAT <- read.csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/SAT_original.csv")
+View(SAT)
 # xxxx
 
 

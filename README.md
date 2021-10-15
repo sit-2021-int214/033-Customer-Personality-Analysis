@@ -7,10 +7,48 @@ Customer Personality Analysis is a detailed analysis of a company’s ideal cust
 Customer personality analysis helps a business to modify its product based on its target customers from different types of customer segments. For example, instead of spending money to market a new product to every customer in the company’s database, a company can analyze which customer segment is most likely to buy the product and then market the product only on that particular segment.
 
 ## Objective
+ที่เราเลือกชุดข้อมูลนี้มา เพราะ อยากรู้ว่าในเชิงของธุรกิจ การที่มีข้อมูลต่างๆของลูกค้าแล้วสามารถนำมาวิเคระห์ได้นั้น จะเป็นประโยชน์ต่อเจ้าของธุรกิจอย่างไรบ้าง เช่น การเข้าใจพฤติกรรม ความต้องการ และความสนใจของลูกค้า
 
-## Process
+### สิ่งที่อยากรู้
+1. โจทย์
+1. โจทย์
+1. โจทย์
+1. โจทย์
+1. โจทย์
+1. โจทย์
 
-## Result
+### Steps
+1. Define a question
+1. Search datasets from Kaggle
+1. Download Library and dataset
+1. Explore the dataset from the original dataset
+1. Cleaning Dataset
+1. Exploratory Data Analysis
+
+## Tools
+
+* R Language
+* R Studio Desktop
+* Microsoft Excel
+
+
+## Table of Contents
+
+1. [Exploratory Data Analysis](./01_explore.md)
+2. [Data Visualization]()
+
+## Resources
+
+### Important Files in Repository
+
+- [code_eda.R](./code_eda.R) : Exploratory Data Analysis
+- [products_original.csv](./products_original.csv): Original Dataset
+- [products_clean.csv](./products_original.csv): Clean Dataset
+
+### References
+
+// Link
+
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี

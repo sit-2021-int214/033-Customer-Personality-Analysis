@@ -37,3 +37,7 @@ Attributes
 * NumCatalogPurchases: Number of purchases made using a catalogue
 * NumStorePurchases: Number of purchases made directly in stores
 * NumWebVisitsMonth: Number of visits to company’s web site in the last month
+
+Datasets from: [customer-personality-analysis-dataset](https://www.kaggle.com/imakash3011/customer-personality-analysis)
+
+

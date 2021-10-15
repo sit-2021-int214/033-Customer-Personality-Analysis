@@ -1,13 +1,16 @@
 # Student_ID
 # Step 0
 library(dplyr)
+library(stringr)
+library(readr)
+library(assertive)
 
 # Explore
 SAT <- read.csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/SAT_original.csv")
 View(SAT)
 # xxxx
 
-
+glimpse(SAT)
 
 # USEFUL FUNCTION (After finished please remove it) -------------------------
 ## Stat

@@ -1,8 +1,8 @@
 
-## Content
+## Content 📌
 Attributes
 
-### People
+### People 👪
 
 * ID: Customer's unique identifier
 * Year_Birth: Customer's birth year
@@ -14,7 +14,8 @@ Attributes
 * Dt_Customer: Date of customer's enrollment with the company
 * Recency: Number of days since customer's last purchase
 * Complain: 1 if customer complained in the last 2 years, 0 otherwise
-### Products
+
+### Products 📦
 
 * MntWines: Amount spent on wine in last 2 years
 * MntFruits: Amount spent on fruits in last 2 years
@@ -22,7 +23,8 @@ Attributes
 * MntFishProducts: Amount spent on fish in last 2 years
 * MntSweetProducts: Amount spent on sweets in last 2 years
 * MntGoldProds: Amount spent on gold in last 2 years
- ### Promotion
+
+ ### Promotion 💳
 
 * NumDealsPurchases: Number of purchases made with a discount
 * AcceptedCmp1: 1 if customer accepted the offer in the 1st campaign, 0 otherwise
@@ -31,7 +33,8 @@ Attributes
 * AcceptedCmp4: 1 if customer accepted the offer in the 4th campaign, 0 otherwise
 * AcceptedCmp5: 1 if customer accepted the offer in the 5th campaign, 0 otherwise
 * Response: 1 if customer accepted the offer in the last campaign, 0 otherwise
-### Place
+
+### Place 📋
 
 * NumWebPurchases: Number of purchases made through the company’s web site
 * NumCatalogPurchases: Number of purchases made using a catalogue

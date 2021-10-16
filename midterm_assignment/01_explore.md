@@ -20,16 +20,17 @@ library(DescTools)
 CPA <- read.csv("URL ของ CSV ที่ Clean แล้ว")
 ```
 
-## Question 1 : Problem Statement
+## Question 1 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
 
 ```ruby
-code here
+cust_avg_income <- CPA$Income %>% mean(na.rm = T)
+cust_avg_income
 ```
 
 ### Result
 
 ```ruby
-outputt
+52247.25
 ```
 ### Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result

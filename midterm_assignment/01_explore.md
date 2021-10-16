@@ -7,22 +7,29 @@
 1.
 
 
-## Step 0 
+## Step 0 : Library and Dataset
 
 ```ruby
-#library
+#library ใช้ไม่ใช้อันไหนเดี๋ยวค่อยเอาออก
+library(dplyr)
+library(assertive)
+library(readr)
+library(stringr)
+library(DescTools)
 #dataset
+CPA <- read.csv("URL ของ CSV ที่ Clean แล้ว")
 ```
 
-## Qestion 1 : 
+## Qestion 1 : Problem Statement
 
 ```ruby
+code here
 ```
 
 ### Result
 
 ```ruby
-
+outputt
 ```
 ### Explain here :
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+อธิบายเกี่ยวกับ Problem Statement กับ Result

@@ -41,9 +41,9 @@ Customer personality analysis helps a business to modify its product based on it
 
 ### Important Files in Repository
 
-- [code_eda.R](./code_eda.R) : Exploratory Data Analysis
+- [ไฟล์ที่ใช้ทำหาคำตอบ.R](./code_eda.R) : Exploratory Data Analysis
 - [CPA_original.csv](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/CPA_original.csv): Original Dataset
-- [products_clean.csv](./products_original.csv): Clean Dataset
+- [Cleaned_Dataset.csv](./products_original.csv): Clean Dataset
 
 ### References
 

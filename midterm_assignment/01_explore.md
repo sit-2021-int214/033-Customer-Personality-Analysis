@@ -20,7 +20,7 @@ library(DescTools)
 CPA <- read.csv("URL ของ CSV ที่ Clean แล้ว")
 ```
 
-## Qestion 1 : Problem Statement
+## Question 1 : Problem Statement
 
 ```ruby
 code here

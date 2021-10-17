@@ -17,7 +17,7 @@ library(readr)
 library(stringr)
 library(DescTools)
 #dataset
-CPA <- read.csv("URL ของ CSV ที่ Clean แล้ว")
+CPA <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-Personality-Analysis/main/midterm_assignment/CPA_cleaned.csv")
 ```
 
 ## Question 1 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด

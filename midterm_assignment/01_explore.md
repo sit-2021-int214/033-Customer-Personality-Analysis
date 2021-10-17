@@ -20,20 +20,8 @@ library(DescTools)
 CPA <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-Personality-Analysis/main/midterm_assignment/CPA_cleaned.csv")
 ```
 
-## Question 1 : 
 
-```ruby
-
-```
-
-### Result
-
-```ruby
-```
-### Explain here :
-อธิบายเกี่ยวกับ Problem Statement กับ Result
-
-## Question 2 : ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา 
+## Question 1 : ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา 
 
 ```ruby
 summary(CPA$Income)
@@ -69,6 +57,25 @@ Education  max_income avg_income min_income
 
 ### Explain here :
 จากชุดข้อมูลลูกค้าพบว่ามีข้อมูลรายได้มีข้อมูลที่เป็น outlier อยู่จึงไม่นำข้อมูลเหล่านั้นมาหาค่าเฉลี่ย
+
+## Question 2 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
+
+```ruby
+CPA %>% select(Income) %>% 
+  filter(Income < outlier) %>%
+  summarise(avg_income = mean(Income,na.rm = T))            
+
+```
+
+### Result
+
+```ruby
+avg_income
+1   51633.64
+```
+### Explain here :
+อธิบายเกี่ยวกับ Problem Statement กับ Result
+
 ## Question 3 : 
 
 ```ruby

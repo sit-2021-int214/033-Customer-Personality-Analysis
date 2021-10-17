@@ -34,3 +34,67 @@ cust_avg_income
 ```
 ### Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
+
+## Question 2 : 
+
+```ruby
+CPA %>% group_by(Education) %>% select(Income) %>%
+  summarise(max_income = max(Income,na.rm = T),
+            avg_income = mean(Income,na.rm = T),
+            min_income = min(Income,na.rm = T))
+
+```
+
+### Result
+
+```ruby
+Education  max_income avg_income min_income
+  <chr>           <int>      <dbl>      <int>
+1 2n Cycle        96547     47633.       7500
+2 Basic           34445     20306.       7500
+3 Graduation     666666     52720.       1730
+4 Master         157733     52918.       6560
+5 PhD            162397     56145.       4023```
+
+### Explain here :
+อธิบายเกี่ยวกับ Problem Statement กับ Result
+
+## Question 3 : 
+
+```ruby
+```
+
+### Result
+
+```ruby
+52247.25
+```
+### Explain here :
+อธิบายเกี่ยวกับ Problem Statement กับ Result
+
+## Question 4 : 
+
+```ruby
+```
+
+### Result
+
+```ruby
+52247.25
+```
+### Explain here :
+อธิบายเกี่ยวกับ Problem Statement กับ Result
+
+## Question 5 : 
+
+```ruby
+```
+
+### Result
+
+```ruby
+52247.25
+```
+### Explain here :
+อธิบายเกี่ยวกับ Problem Statement กับ Result
+

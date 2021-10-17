@@ -38,6 +38,8 @@ cust_avg_income
 ## Question 2 : ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา 
 
 ```ruby
+summary(CPA$Income)
+
 outlier <- 68522 +1.5*IQR(CPA$Income,na.rm = T)
 outlier
 
@@ -53,6 +55,10 @@ CPA %>% group_by(Education) %>% select(Income) %>%
 ```ruby
 >outlier
 118350.5
+
+>summary(CPA$Income)
+ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+   1730   35303   51382   52247   68522  666666      24 
 
 Education  max_income avg_income min_income
   <chr>           <int>      <dbl>      <int>

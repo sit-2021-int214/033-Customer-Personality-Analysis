@@ -20,17 +20,15 @@ library(DescTools)
 CPA <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-Personality-Analysis/main/midterm_assignment/CPA_cleaned.csv")
 ```
 
-## Question 1 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
+## Question 1 : 
 
 ```ruby
-cust_avg_income <- CPA$Income %>% mean(na.rm = T)
-cust_avg_income
+
 ```
 
 ### Result
 
 ```ruby
-52247.25
 ```
 ### Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result

@@ -41,7 +41,8 @@ cust_avg_income
 outlier <- 68522 +1.5*IQR(CPA$Income,na.rm = T)
 outlier
 
-CPA %>% group_by(Education) %>% select(Income) %>% filter(Income < 118350.5) %>%
+CPA %>% group_by(Education) %>% select(Income) %>% 
+  filter(Income < 118350.5) %>%
   summarise(max_income = max(Income,na.rm = T),
             avg_income = mean(Income,na.rm = T),
             min_income = min(Income,na.rm = T))

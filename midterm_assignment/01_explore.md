@@ -35,14 +35,13 @@ cust_avg_income
 ### Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-## Question 2 : 
+## Question 2 : ข้อมูลรายได้ของลูกค้าแต่ละระดับการศึกษา
 
 ```ruby
 CPA %>% group_by(Education) %>% select(Income) %>%
   summarise(max_income = max(Income,na.rm = T),
             avg_income = mean(Income,na.rm = T),
             min_income = min(Income,na.rm = T))
-
 ```
 
 ### Result
@@ -54,7 +53,8 @@ Education  max_income avg_income min_income
 2 Basic           34445     20306.       7500
 3 Graduation     666666     52720.       1730
 4 Master         157733     52918.       6560
-5 PhD            162397     56145.       4023```
+5 PhD            162397     56145.       4023
+```
 
 ### Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result

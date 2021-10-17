@@ -44,7 +44,7 @@ outlier <- 68522 +1.5*IQR(CPA$Income,na.rm = T)
 outlier
 
 CPA %>% group_by(Education) %>% select(Income) %>% 
-  filter(Income < 118350.5) %>%
+  filter(Income < outlier) %>%
   summarise(max_income = max(Income,na.rm = T),
             avg_income = mean(Income,na.rm = T),
             min_income = min(Income,na.rm = T))
@@ -70,7 +70,7 @@ Education  max_income avg_income min_income
 ```
 
 ### Explain here :
-
+จากชุดข้อมูลลูกค้าพบว่ามีข้อมูลรายได้มีข้อมูลที่เป็น outlier อยู่จึงไม่นำข้อมูลเหล่านั้นมาหาค่าเฉลี่ย
 ## Question 3 : 
 
 ```ruby

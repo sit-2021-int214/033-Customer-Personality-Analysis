@@ -35,7 +35,7 @@ cust_avg_income
 ### Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-## Question 2 : ข้อมูลรายได้ของลูกค้าแต่ละระดับการศึกษา
+## Question 2 : ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา
 
 ```ruby
 CPA %>% group_by(Education) %>% select(Income) %>%

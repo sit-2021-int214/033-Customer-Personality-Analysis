@@ -73,8 +73,8 @@ glimpse(CPA)
 
 write.csv(CPA_NEW,"C:/Users/User/Desktop/INT214/033-Customer-Personality-Analysis/midterm_assignment/CPA_cleaned.csv",row.names = F)
 ```
-
-## Question 1 : ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา 
+## Data Analysis with Descriptive Statistics
+### Question 1 : ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา 
 
 ```ruby
 summary(CPA$Income)
@@ -111,7 +111,7 @@ Education  max_income avg_income min_income
 ### Explain here :
 จากชุดข้อมูลลูกค้าพบว่ามีข้อมูลรายได้มีข้อมูลที่เป็น outlier อยู่จึงไม่นำข้อมูลเหล่านั้นมาหาค่าเฉลี่ย
 
-## Question 2 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
+### Question 2 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
 
 ```ruby
 CPA %>% select(Income) %>% 
@@ -129,7 +129,7 @@ avg_income
 ### Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-## Question 3 : 
+### Question 3 : 
 
 ```ruby
 ```
@@ -142,7 +142,7 @@ avg_income
 ### Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-## Question 4 : 
+### Question 4 : 
 
 ```ruby
 ```
@@ -155,7 +155,7 @@ avg_income
 ### Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-## Question 5 : 
+### Question 5 : 
 
 ```ruby
 ```

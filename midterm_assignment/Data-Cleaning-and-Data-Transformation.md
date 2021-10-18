@@ -1,6 +1,6 @@
 ## Data Cleaning and Data Transformation
 ```ruby
-#ตรวจสอบ library
+#ตรวจสอบ library โดยการใช้คำสั่ง library(ชื่อไลบรารี่นั้นๆ) เพื่อให้สามารถใช้งานคำสั่งบางคำสั่งได้
 library(dplyr)
 library(readr)
 library(DescTools)
@@ -8,8 +8,10 @@ library(assertive)
 library(stringr)
 #--------------------------------------
 #save into new variable
+#ทำการบันทึก dataset csv file ลงใน variable ใหม่ที่ชื่อ "CPA_NEW"
 CPA_NEW <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-Personality-Analysis/main/midterm_assignment/CPA_original.csv")
-#CPA <- marketing_campaign_original
+
+#เรียกดู/ตรวจสอบข้อมูลที่ใน variable: CPA_NEW โดยคำสั่ง View() และ glimse()
 View(CPA_NEW)
 glimpse(CPA)
 #--------------------------------------

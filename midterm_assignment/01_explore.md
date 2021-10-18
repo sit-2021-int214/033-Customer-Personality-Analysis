@@ -26,7 +26,7 @@ CPA <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-
 ## Step 2 : Data Cleaning and Data Transformation
 
 ```ruby
-#µÃÇ¨ÊÍº library
+#ตรวจสอบ library
 library(dplyr)
 library(readr)
 library(DescTools)
@@ -66,7 +66,7 @@ CPA_NEW <- CPA %>% select(ID,YearBirth,Education,MaritalStatus,Income,KidAtHome,
                       NumWebVisitsMonth,AcceptedCmp1,AcceptedCmp2,AcceptedCmp3,AcceptedCmp4,
                       AcceptedCmp5,Complain,CostContact,Revenue,Response)
 
-#·Ó¡ÒÃ»ÃÑº format ¢Í§ DtCustomer ãËéà»ç¹ pattern à´ÕÂÇ¡Ñ¹·Ñé§ËÁ´
+#ทำการปรับ format ของ DtCustomer ให้เป็น pattern เดียวกันทั้งหมด
 
 CPA_NEW <- CPA %>% mutate(DtCustomer = str_replace_all(DtCustomer,'/','-'))
 

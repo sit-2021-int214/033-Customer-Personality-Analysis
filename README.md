@@ -17,12 +17,12 @@ Customer personality analysis helps a business to modify its product based on it
 1. โจทย์
 
 ### Steps
-1. Define a question
 1. Search datasets from Kaggle
-1. Download Library and dataset
 1. Explore the dataset from the original dataset
-1. Cleaning Dataset
+1. Download Library and dataset
 1. Exploratory Data Analysis
+1. Cleaning Dataset
+1. Define a question
 
 ## Tools
 

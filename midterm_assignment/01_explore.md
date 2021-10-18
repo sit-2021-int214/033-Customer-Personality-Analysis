@@ -20,8 +20,10 @@ library(DescTools)
 #dataset
 CPA <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-Personality-Analysis/main/midterm_assignment/CPA_cleaned.csv")
 ```
-
-## Data Cleaning
+## Data Exploration
+```ruby
+```
+## Data Cleaning and Data Transformation
 
 ```ruby
 #µÃÇ¨ÊÍº library

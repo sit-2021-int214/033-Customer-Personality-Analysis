@@ -1,5 +1,5 @@
 ### Data Cleaning and Data Transformation
-
+```ruby
 #ตรวจสอบ library
 library(dplyr)
 library(readr)
@@ -48,3 +48,4 @@ View(CPA_NEW)
 glimpse(CPA)
 
 write.csv(CPA_NEW,"C:/Users/User/Desktop/INT214/033-Customer-Personality-Analysis/midterm_assignment/CPA_cleaned.csv",row.names = F)
+```

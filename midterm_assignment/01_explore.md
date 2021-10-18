@@ -76,7 +76,7 @@ glimpse(CPA)
 write.csv(CPA_NEW,"C:/Users/User/Desktop/INT214/033-Customer-Personality-Analysis/midterm_assignment/CPA_cleaned.csv",row.names = F)
 ```
 ## Step 3 : Data Analysis with Descriptive Statistics
-### 3.1.1 Question 1 : ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา 
+### 3.1.1) Question 1 : ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา 
 
 ```ruby
 summary(CPA$Income)
@@ -91,7 +91,7 @@ CPA %>% group_by(Education) %>% select(Income) %>%
             min_income = min(Income,na.rm = T))
 ```
 
-###  3.1.2 Result
+###  3.1.2) Result
 
 ```ruby
 >outlier
@@ -110,10 +110,10 @@ Education  max_income avg_income min_income
 5 PhD            113734     55280.       4023
 ```
 
-### 3.1.3 Explain here :
+### 3.1.3) Explain here :
 จากชุดข้อมูลลูกค้าพบว่ามีข้อมูลรายได้มีข้อมูลที่เป็น outlier อยู่จึงไม่นำข้อมูลเหล่านั้นมาหาค่าเฉลี่ย
 
-### 3.2.1 Question 2 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
+### 3.2.1) Question 2 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
 
 ```ruby
 CPA %>% select(Income) %>% 
@@ -122,51 +122,51 @@ CPA %>% select(Income) %>%
 
 ```
 
-### 3.2.2 Result
+### 3.2.2) Result
 
 ```ruby
 avg_income
 1   51633.64
 ```
-### 3.2.3 Explain here :
+### 3.2.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-### 3.3.1 Question 3 : 
+### 3.3.1) Question 3 : 
 
 ```ruby
 ```
 
-### 3.3.2 Result
+### 3.3.2) Result
 
 ```ruby
 52247.25
 ```
-### 3.3.3 Explain here :
+### 3.3.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-### 3.4.1 Question 4 : 
+### 3.4.1) Question 4 : 
 
 ```ruby
 ```
 
-### 3.4.2 Result
+### 3.4.2) Result
 
 ```ruby
 52247.25
 ```
-### 3.4.3 Explain here :
+### 3.4.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-### 3.5.1 Question 5 : 
+### 3.5.1) Question 5 : 
 
 ```ruby
 ```
 
-### 3.5.2 Result
+### 3.5.2) Result
 
 ```ruby
 52247.25
 ```
-### 3.5.3 Explain here :
+### 3.5.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 

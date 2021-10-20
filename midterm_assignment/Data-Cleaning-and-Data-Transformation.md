@@ -1,21 +1,35 @@
-## Data Cleaning and Data Transformation
+กลุ่ม 033 ได้ทำการตรวจสอบ data ของข้อมูลที่เลือกมา ซึ่งพบว่ามีบางคอลัมน์และบางค่าของข้อมูลอาจมี pattern ที่ไม่เหมือนกัน ซึ่งอาจส่งผลให้ข้อมูลไม่มีความสวยงาม ไม่เป็นระบบ และไม่สอดคล้องกันกับข้อมูลอื่นๆ ดังนั้น กลุ่ม 033 จึงเล็งเห็นว่าควรต้องทำ Data Cleaning เพื่อให้ผลลัพธ์ของข้อมูลเป็นไปอย่างถูกต้อง,สมบูรณ์ และไม่เกิดความผิดพลาดใดๆ โดยต่อจากนี้จะเป็นกระบวณการ การทำ Data Cleaning & Transformation
+## #Data Cleaning and Data Transformation
+ก่อนเริ่มต้นการทำ Data Cleaning & Transformation จะต้องทำการ "ตรวจสอบ library" โดยการใช้คำสั่ง ```library(ชื่อไลบรารี่นั้นๆ)``` เพื่อให้สามารถใช้งานคำสั่งบางคำสั่งได้
 ```ruby
-#ตรวจสอบ library โดยการใช้คำสั่ง library(ชื่อไลบรารี่นั้นๆ) เพื่อให้สามารถใช้งานคำสั่งบางคำสั่งได้
 library(dplyr)
 library(readr)
 library(DescTools)
 library(assertive)
 library(stringr)
-#--------------------------------------
-#save into new variable
-#ทำการบันทึก dataset csv file ลงใน variable ใหม่ที่ชื่อ "CPA_NEW"
-CPA_NEW <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-Personality-Analysis/main/midterm_assignment/CPA_original.csv")
+```
 
-#เรียกดู/ตรวจสอบข้อมูลที่ใน variable: CPA_NEW โดยคำสั่ง View() และ glimse()
+หลังจากการตรวจสอบ library แล้ว จากนั้นก็ทำการ "บันทึก dataset file.csv" ลงใน variable ใหม่ที่ชื่อ "CPA_NEW"
+```
+CPA_NEW <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-Personality-Analysis/main/midterm_assignment/CPA_original.csv")
+```
+ทำการตรวจสอบตารางโดยคำสั่ง
+```
 View(CPA_NEW)
 glimpse(CPA)
-#--------------------------------------
-#Data Cleaning
+```
+ผลลัพธ์ที่ได้จากการ View
+
+![image](https://user-images.githubusercontent.com/73602900/138119437-a1aac7d5-ba0a-4b43-b22e-d77afccdd5a6.png)
+
+และ glimpse
+
+![image](https://user-images.githubusercontent.com/73602900/138119807-d4b3c6ed-aed9-47cb-bd9c-f3bfe6914006.png)
+
+เตรียมการเสร็จแล้วก็เริ่มต้นทำ Data Cleaning ได้
+
+##
+## #เริ่มต้นการทำ Data Cleaning & Data Transformation
 
 #Rename column name "Kidhome" to "KidAtHome"
 CPA_NEW <- CPA %>% rename(KidAtHome=Kidhome)

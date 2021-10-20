@@ -27,7 +27,7 @@ glimpse(CPA)
 
 ![image](https://user-images.githubusercontent.com/73602900/138119807-d4b3c6ed-aed9-47cb-bd9c-f3bfe6914006.png)
 
-เตรียมการเสร็จแล้วก็เริ่มต้นทำ Data Cleaning ได้
+## เตรียมการเสร็จแล้วก็เริ่มต้นทำ Data Cleaning ได้
 ```ruby
 ## #เริ่มต้นการทำ Data Cleaning & Data Transformation
 

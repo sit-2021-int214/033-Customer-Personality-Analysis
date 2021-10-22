@@ -92,6 +92,12 @@ write.csv(CPA_NEW,"C:/Users/User/Desktop/INT214/033-Customer-Personality-Analysi
 ```
 #
 ## จัดการกับ column ที่ไม่จำเป็น
+```ruby
+#ทำการจัดการกับ column ที่ไม่จำเป็นด้วย "write.csv(ชื่อตัวแปร,"path-data file",row.names = F)"
+write.csv(CPA_NEW,"C:/Users/User/Desktop/INT214/033-Customer-Personality-Analysis/midterm_assignment/CPA_cleaned.csv",row.names = F)
+```
+หรือใช้อีกวิธีผ่าน Microsoft Excel โดย...
+#
 ใช้ Microsoft Excel ในการลบ column A ออก เพราะว่า เลขที่แสดงของแต่ละ row นั้นคือเลขบรรทัด จึงไม่มีความจำเป็นที่ต้องเก็บเป็นอีกหนึ่ง attribute
 ### Steps
 1. เปิดไฟล์ CSV

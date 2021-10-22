@@ -173,3 +173,17 @@ avg_income
 ### 3.5.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result  
 
+### 3.6.1) Question 6 : 
+
+```ruby
+
+```
+
+### 3.6.2) Result
+
+```ruby
+
+```
+### 3.6.3) Explain here :
+อธิบายเกี่ยวกับ Problem Statement กับ Result  
+

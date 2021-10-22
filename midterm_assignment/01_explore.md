@@ -1,11 +1,11 @@
 ## Define a question
 
 1. ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา
-2. รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
-3. จำนวนของลูกค้าในแต่ละระดับการศึกษา
-4. (เด่วมา clean โจทย์) ค่าใช้จ่ายที่ใช้ไปของแต่ละผลิตภัณฑ์ "โดยเฉลี่ย" ตลอด 2 ปีที่ผ่านมาเป็นเท่าไหร่บ้าง และผลิตภัณฑ์ใดที่มีค่าใช้จ่าย "สูงที่สุด" 
-5.
-6.
+1. รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
+1.
+1.
+1.
+1.
 
 
 ## Step 0 : Library and Dataset
@@ -20,63 +20,10 @@ library(DescTools)
 #dataset
 CPA <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-Personality-Analysis/main/midterm_assignment/CPA_cleaned.csv")
 ```
-## Step 1 : Data Exploration
-```ruby
-```
-## Step 2 : Data Cleaning and Data Transformation
 
-```ruby
-#ตรวจสอบ library
-library(dplyr)
-library(readr)
-library(DescTools)
-library(assertive)
-library(stringr)
-#--------------------------------------
-#save into new variable
-CPA_NEW <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/033-Customer-Personality-Analysis/main/midterm_assignment/CPA_original.csv")
-#CPA <- marketing_campaign_original
-View(CPA_NEW)
-glimpse(CPA)
-#--------------------------------------
-#Data Cleaning
+## Step 1 : Data Analysis with Descriptive Statistics
 
-#Rename column name "Kidhome" to "KidAtHome"
-CPA_NEW <- CPA %>% rename(KidAtHome=Kidhome)
-
-#Rename column name "TeenHome" to "TeenAtHome"
-CPA_NEW <- CPA %>% rename(TeenAtHome=Teenhome)
-
-#Rename every column to "PascalCase" ***Except! "Z_CostContact and Z_Revenue"
-CPA_NEW <- CPA %>% rename(YearBirth=Year_Birth,MaritalStatus=Marital_Status,
-                      DtCustomer=Dt_Customer)
-
-#Rename column name "Z_CostContact" to "CostContact"
-CPA_NEW <- CPA %>% rename(CostContact=Z_CostContact)
-
-
-#Rename column name "Z_Revenue" to "Revenue"
-CPA_NEW <- CPA %>% rename(Revenue=Z_Revenue)
-
-#Sorting column
-CPA_NEW <- CPA %>% select(ID,YearBirth,Education,MaritalStatus,Income,KidAtHome,TeenAtHome,
-                      DtCustomer,Recency,MntWines,MntFruits,MntMeatProducts,
-                      MntFishProducts,MntSweetProducts,MntGoldProds,NumDealsPurchases,
-                      NumWebPurchases,NumCatalogPurchases,NumStorePurchases,
-                      NumWebVisitsMonth,AcceptedCmp1,AcceptedCmp2,AcceptedCmp3,AcceptedCmp4,
-                      AcceptedCmp5,Complain,CostContact,Revenue,Response)
-
-#ทำการปรับ format ของ DtCustomer ให้เป็น pattern เดียวกันทั้งหมด
-
-CPA_NEW <- CPA %>% mutate(DtCustomer = str_replace_all(DtCustomer,'/','-'))
-
-View(CPA_NEW)
-glimpse(CPA)
-
-write.csv(CPA_NEW,"C:/Users/User/Desktop/INT214/033-Customer-Personality-Analysis/midterm_assignment/CPA_cleaned.csv",row.names = F)
-```
-## Step 3 : Data Analysis with Descriptive Statistics
-### 3.1.1) Question 1 : ข้อมูลรายได้ของลูกค้าในแต่ละระดับการศึกษา 
+### 1.1.1) Question 1 : ข้อมูลรายได้ของลูกค้า มากที่สุด,โดยเฉลี่ย และ น้อยที่สุด ในแต่ละระดับการศึกษา
 
 ```ruby
 summary(CPA$Income)
@@ -91,7 +38,7 @@ CPA %>% group_by(Education) %>% select(Income) %>%
             min_income = min(Income,na.rm = T))
 ```
 
-###  3.1.2) Result
+###  1.1.2) Result
 
 ```ruby
 >outlier
@@ -110,10 +57,10 @@ Education  max_income avg_income min_income
 5 PhD            113734     55280.       4023
 ```
 
-### 3.1.3) Explain here :
-จากชุดข้อมูลลูกค้าพบว่ามีข้อมูลรายได้มีข้อมูลที่เป็น outlier อยู่จึงไม่นำข้อมูลเหล่านั้นมาหาค่าเฉลี่ย
+### 1.1.3) Explain here :
+อยากรู้ข้อมูลต่างๆเกี่ยวกับรายได้ของลูกค้าในแต่ละระดับการศึกษา คือ โดยที่ไม่นำค่า outlier มาคำนวณด้วย ก็จะแสดงออกมาเป็นรายได้โดยเฉลี่ยของแต่ละระดับการศึกษา โดยจะมีทั้งหมด 5 ระดับการศึกษา และข้อมูลรายได้ Maximum,Average และ Minimum ของแต่ละระดับการศึกษา
 
-### 3.2.1) Question 2 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
+### 1.2.1) Question 2 : รายได้โดยเฉลี่ยของลูกค้าทั้งหมด
 
 ```ruby
 CPA %>% select(Income) %>% 
@@ -122,88 +69,69 @@ CPA %>% select(Income) %>%
 
 ```
 
-### 3.2.2) Result
+### 1.2.2) Result
 
 ```ruby
 avg_income
 1   51633.64
 ```
-### 3.2.3) Explain here :
+### 1.2.3) Explain here :
+จากชุดข้อมูลลูกค้าพบว่ามีข้อมูลรายได้มีข้อมูลที่เป็น outlier อยู่จึงไม่นำข้อมูลเหล่านั้นมาหาค่าเฉลี่ย <br>
+<b>`พบว่าลูกค้าทั้งหมดมีรายได้ต่อปีโดยเฉลี่ยอยู่ที่ $51633.64`</b>
+
+### 1.3.1) Question 3 : 
+
+```ruby
+```
+
+### 1.3.2) Result
+
+```ruby
+
+```
+### 1.3.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-### 3.3.1) Question 3 : จำนวนของลูกค้าในแต่ละระดับการศึกษา
-
-```ruby
-CPA %>% group_by(Education) %>% summarise(count=n())
-```
-
-### 3.3.2) Result
-
-```ruby
-> CPA %>% group_by(Education) %>% summarise(count=n())
-# A tibble: 5 x 2
-  Education  count
-  <chr>      <int>
-1 2n Cycle     203
-2 Basic         54
-3 Graduation  1127
-4 Master       370
-5 PhD          486
-```
-### 3.3.3) Explain here :
-ต้องการทราบถึงจำนวนของลูกค้าในแต่ละระดับการศึกษาว่ามีเท่าไหร่ และมีระดับการศึกษาอะไรบ้าง ซึ่งผลลัพธ์ที่ได้พบว่ามีระดับการศึกษาอยู่ 5 ระดับ อันได้แก่
-
-1.) 2n Cycle: พบว่ามีจำนวนลูกค้าในระดับการศึกษานี้    203 คน
-
-2.) Basic: พบว่ามีจำนวนลูกค้าในระดับการศึกษานี้        54 คน
-
-3.) Graduation: พบว่ามีจำนวนลูกค้าในระดับการศึกษานี้ 1127 คน
-
-4.) Master: พบว่ามีจำนวนลูกค้าในระดับการศึกษานี้      370 คน
-
-5.) PhD: พบว่ามีจำนวนลูกค้าในระดับการศึกษานี้         486 คน
-
-
-### 3.4.1) Question 4 : 
+### 1.4.1) Question 4 : 
 
 ```ruby
 
 ```
 
-### 3.4.2) Result
+### 1.4.2) Result
 
 ```ruby
 
 ```
 
-### 3.4.3) Explain here :
+### 1.4.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
-### 3.5.1) Question 5 : 
+### 1.5.1) Question 5 : 
 
 ```ruby
 
 ```
 
-### 3.5.2) Result
+### 1.5.2) Result
 
 ```ruby
 
 ```
-### 3.5.3) Explain here :
+### 1.5.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result  
 
-### 3.6.1) Question 6 : 
+### 1.6.1) Question 6 : 
 
 ```ruby
 
 ```
 
-### 3.6.2) Result
+### 1.6.2) Result
 
 ```ruby
 
 ```
-### 3.6.3) Explain here :
+### 1.6.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result  
 

@@ -139,7 +139,7 @@ avg_income
 ### 3.3.2) Result
 
 ```ruby
-52247.25
+
 ```
 ### 3.3.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
@@ -147,26 +147,29 @@ avg_income
 ### 3.4.1) Question 4 : 
 
 ```ruby
+
 ```
 
 ### 3.4.2) Result
 
 ```ruby
-52247.25
+
 ```
+
 ### 3.4.3) Explain here :
 อธิบายเกี่ยวกับ Problem Statement กับ Result
 
 ### 3.5.1) Question 5 : 
 
 ```ruby
+
 ```
 
 ### 3.5.2) Result
 
 ```ruby
-52247.25
+
 ```
 ### 3.5.3) Explain here :
-อธิบายเกี่ยวกับ Problem Statement กับ Result
+อธิบายเกี่ยวกับ Problem Statement กับ Result  
 

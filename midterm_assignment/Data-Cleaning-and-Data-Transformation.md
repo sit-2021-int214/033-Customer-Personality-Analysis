@@ -86,10 +86,7 @@ CPA_NEW <- CPA %>% mutate(DtCustomer = str_replace_all(DtCustomer,'/','-'))
 #### #หลังจากปรับ format ให้เป็น pattern เดียวกัน
 ![image](https://user-images.githubusercontent.com/73602900/138395231-e4a2ced9-93db-429e-a2d9-119ede8af7b8.png)
 
-```ruby
-#ทำการจัดการกับ column ที่ไม่จำเป็นด้วย "write.csv(ชื่อตัวแปร,"path-data file",row.names = F)"
-write.csv(CPA_NEW,"C:/Users/User/Desktop/INT214/033-Customer-Personality-Analysis/midterm_assignment/CPA_cleaned.csv",row.names = F)
-```
+
 #
 ## จัดการกับ column ที่ไม่จำเป็น
 ```ruby

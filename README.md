@@ -12,18 +12,17 @@ Customer personality analysis helps a business to modify its product based on it
 ### สิ่งที่อยากรู้
 1. จำนวนลูกค้าที่มีสถานะโสด เกิดหลังปี 1970 และมีรายได้มากกว่า 20000 
 1. ลูกค้าที่สำเร็จการศึกษาแล้ว มีอัตราส่วนของเด็กและวัยรุ่นในบ้านเป็นเท่าไรต่อเท่าไร
-1. ผลต่างของ income โดยเฉลี่ยของลูกค้าในแต่ละระดับการศึกษา
 1. โจทย์
 1. โจทย์
 1. โจทย์
 
 ### Steps
-1. Define a question
 1. Search datasets from Kaggle
-1. Download Library and dataset
 1. Explore the dataset from the original dataset
-1. Cleaning Dataset
+1. Download Library and dataset
 1. Exploratory Data Analysis
+1. Cleaning Dataset
+1. Define a question
 
 ## Tools
 
@@ -34,16 +33,18 @@ Customer personality analysis helps a business to modify its product based on it
 
 ## Table of Contents
 
-1. [Exploratory Data Analysis](./01_explore.md)
-2. [Data Visualization]()
+1. [Exploratory Data Analysis](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/README.md)
+2. [Data Cleaning and Data Transformation](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/Data-Cleaning-and-Data-Transformation.md)
+3. [Data Analysis with Descriptive Statistics](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/01_explore.md)
+4. [Data Visualization]()
 
 ## Resources
 
 ### Important Files in Repository
 
-- [code_eda.R](./code_eda.R) : Exploratory Data Analysis
+- [01.explore.R](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/01_explore.md) : Exploratory Data Analysis
 - [CPA_original.csv](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/CPA_original.csv): Original Dataset
-- [products_clean.csv](./products_original.csv): Clean Dataset
+- [CPA_cleaned.csv](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/CPA_cleaned.csv): Clean Dataset
 
 ### References
 

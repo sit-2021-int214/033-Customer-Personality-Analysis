@@ -162,7 +162,7 @@ $ sum_MntGoldProds     <int> 98609
 ### 1.5.1) Question 5 : จำนวนสถานภาพสมรสของลูกค้าทั้งหมด
 
 ```ruby
-CPA %>% group_by(Marital_Status) %>% Summarise(count=n()) %>%
+CPA %>% group_by(Marital_Status) %>% summarise(count=n()) %>%
 ```
 
 ### 1.5.2) Result

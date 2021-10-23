@@ -111,16 +111,23 @@ avg_income
 ### 1.5.1) Question 5 : จำนวนสถานภาพสมรสของลูกค้าทั้งหมด
 
 ```ruby
-
+CPA %>% group_by(Marital_Status) %>% Summarise(count=n()) %>%
 ```
 
 ### 1.5.2) Result
 
 ```ruby
-
+Married     864
+Together    580
+Single      480
+Divorced    232
+Widow        77
+Alone         3
+Absurd        2
+YOLO          2
 ```
 ### 1.5.3) Explain here :
-อธิบายเกี่ยวกับ Problem Statement กับ Result  
+จากชุดข้อมูลพบว่าสถานภาพสมรสของลูกค้ามีทั้งหมด 8 ประเภท ประกอบด้วยมีลูกค้าที่อยู่ในสถานะ Married 864 คน สถานะ Together 580 คน สถานะ Single 480 คน สถานะ Divorced 232 คน สถานะ Widow 77 คน สถานะ Alone 3 คน สถานะ Absurd 2 คน และ สถานะ YOLO 2 คน
 
 ### 1.6.1) Question 6 : 
 

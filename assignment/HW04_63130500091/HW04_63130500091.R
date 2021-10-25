@@ -55,13 +55,20 @@ scat_plot <- PROG_BOOK %>% ggplot(aes(x=Rating,y=Price))  +
 
 scat_plot
 
+test <- as.data.frame(table(PROG_BOOK$Type))
+test
 
-bar_plot <- PROG_BOOK %>% ggplot(aes(x = Type)) + geom_bar(aes(fill = Type)) + 
+count_type <- PROG_BOOK %>% group_by(Type) %>% count()
+count_type
+
+bar_plot <- count_type %>% ggplot(aes(x =Type,y = n, fill = Type)) +
+  geom_bar(stat = "identity") + geom_text(aes(label = n)) +
   labs(title = "Bar chart of the books of each type",
        subtitle = "The Paperback is the most type of book.", x = "Type" ,y = "Amount",
        caption = "Dataset by Thomas Konstantin",
        fill = "Book's Type")
-  
+
+
 bar_plot
 
 

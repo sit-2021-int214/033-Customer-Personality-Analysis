@@ -29,6 +29,7 @@ Customer personality analysis helps a business to modify its product based on it
 * R Language
 * R Studio Desktop
 * Microsoft Excel
+* Power BI
 
 
 ## Table of Contents

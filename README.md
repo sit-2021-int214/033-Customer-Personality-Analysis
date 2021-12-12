@@ -33,18 +33,19 @@ Customer personality analysis helps a business to modify its product based on it
 
 ## Table of Contents
 
-1. [Exploratory Data Analysis](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/README.md)
-2. [Data Cleaning and Data Transformation](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/Data-Cleaning-and-Data-Transformation.md)
-3. [Data Analysis with Descriptive Statistics](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/01_explore.md)
+1. [Exploratory Data Analysis](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/README.md)
+2. [Data Cleaning and Data Transformation](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/Data-Cleaning-and-Data-Transformation.md)
+3. [Data Analysis with Descriptive Statistics](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/01_explore.md)
 4. [Data Visualization]()
+5. [Hypothesis Testing](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/tree/main/term_assignment/final_assignment)
 
 ## Resources
 
 ### Important Files in Repository
 
-- [01.explore.R](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/01_explore.md) : Exploratory Data Analysis
-- [CPA_original.csv](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/CPA_original.csv): Original Dataset
-- [CPA_cleaned.csv](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/CPA_cleaned.csv): Clean Dataset
+- [01.explore.R](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/01_explore.md) : Exploratory Data Analysis
+- [CPA_original.csv](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/CPA_original.csv): Original Dataset
+- [CPA_cleaned.csv](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/CPA_cleaned.csv): Clean Dataset
 
 ### References
 

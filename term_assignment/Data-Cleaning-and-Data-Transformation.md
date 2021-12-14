@@ -101,7 +101,7 @@ write.csv(CPA_NEW,"C:/Users/User/Desktop/INT214/033-Customer-Personality-Analysi
 2. เลือกทั้ง column A
 3. คลิ๊กขวา แล้วเลือก Delete
 
-![Alt Text](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/midterm_assignment/excelsolv.JPG)
+![Alt Text](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/excelsolv.JPG)
 
 
 

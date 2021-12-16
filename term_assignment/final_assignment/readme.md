@@ -20,24 +20,33 @@
 6. Conclusion
 ## Define a question
 
-///ตั้งสมมติฐาน
-
+ตั้งสมมติฐานว่า 
+"จากการสุ่มตั่วอย่างลูกค้าจำนวน 100 คน พบว่าค่าเฉลี่ยรายได้ของลูกค้าในช่วงอายุ <1963 (baby boomers) 
+เมื่อเทียบกับค่าเฉลี่ยรายได้ของลูกค้าในช่วงอายุ 1963-1980(genX) จะมีตั้งแต่ 53000$ ขึ้นไป
+ในขณะที่ลูกค้า genX จะมีค่าเฉลี่ยเงินเดือนน้อยกว่า 53000$ "
+  - กำหนดระดับนัยสำคัญ(alpha)ไว้ที่ 1% 
+  - sd = 20979.76
+  - u0 = 53000$
+  - xbar = 52003.29$
 
 ## Steps
 Step 0: Assign variables 
 ```ruby
-// code here
+n <- 100
+sd <- 20979.76
+xbar <- 52003.29
+u0 <- 53000
 ```
 
 Step 1: State the hypothesis
 ```ruby
-Ho : μ ≥ 69420
-Ha : μ < 69420
+#   h0: u>=53000, ha: u<53000
 ```
 
 Step 2: Level of significance
 ```ruby
-alpha <- 
+#level of significant(alpha) = 1%
+alpha <- 1/100; alpha
 ```
 
 Step 3: Test statistic
@@ -56,21 +65,37 @@ zalpha <- qnorm(alpha);zalpha
 
 Step 5: Compare
 ```ruby
-# Using p-value approach
-if(pvalue<=alpha){
-  print("Reject H0")
+#pval approach
+pval <- pnorm(z); pval
+#cri val app
+zal <- qnorm(alpha); zal;
+
+#compare 
+
+#using pval app
+pvalAppr <- if(pval<=alpha){
+  print("Reject h0")
 }else{
-  print("Accept H0")
+  print("Accept h0")
 }
 
-# Using critical value
-if(z<=zalpha){
-  print("Reject H0")
+#using zal app
+zalAppr <-  if(z<=zal){
+  print("Reject h0")
 }else{
-  print("Accept H0")
+  print("Accept h0")
 }
+
+pvalAppr
+zalAppr
 ```
 Step 6: Conclusion
-//explain
+
+accepted h0 ทั้งสองวิธี: สรุปได้ว่า "ยอมรับ h0 เงินเดือนเฉลี่ยลูกค้าจากการสุ่มตัวอย่าง 100 คนที่เป็น genX นั้น ไม่ได้แตกต่างจาก genBeb เท่าไหร่
+จึงหมายความได้ว่าเงินเดือนเฉลี่ยลูกค้า genX ที่น้อยกว่า 53000$ นั้น ไม่เป็นความจริง"
+
+ทำให้เราสามารถวิเคราะห์กลุ่มลูกค้าใน genBeb - X เลยทราบได้ว่าพวกเขายังมีรายได้ที่ไม่แตกต่างกันมาก ทำให้ทีมงานการตลาดอย่างพวกเรานั้น
+นำข้อมูลเหล่านี้มาทำการประเมินความเป็นไปได้ในการจัดทำสินค้าหรือผลิตภัณฑ์หรือการบริการ ที่สามารถตอบโจทย์กับลูกค้ากลุ่มอายุเหล่านี้ได้
+โดยไม่ส่งผลกระทบต่อฐานะการเงินของพวกเขา
 
 

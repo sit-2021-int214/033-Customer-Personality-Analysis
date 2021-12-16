@@ -47,6 +47,7 @@ Customer personality analysis helps a business to modify its product based on it
 - [01.explore.R](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/01_explore.md) : Exploratory Data Analysis
 - [CPA_original.csv](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/CPA_original.csv): Original Dataset
 - [CPA_cleaned.csv](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/CPA_cleaned.csv): Clean Dataset
+- [G033_hypo testing.R](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/final_assignment/G033_hypo%20testing.R) : Hypothesis Testing
 
 ### References
 

@@ -37,7 +37,7 @@ Customer personality analysis helps a business to modify its product based on it
 1. [Exploratory Data Analysis](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/README.md)
 2. [Data Cleaning and Data Transformation](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/Data-Cleaning-and-Data-Transformation.md)
 3. [Data Analysis with Descriptive Statistics](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/blob/main/term_assignment/01_explore.md)
-4. [Data Visualization](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/tree/main/term_assignment/final_assignment/Power-BI)
+4. [Data Visualization](https://app.powerbi.com/view?r=eyJrIjoiMGNjMzFlOTctNTZjMy00MWZlLWEyNmEtNzBhZGRhNmVhMDdiIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection)
 5. [Analytical Inferentail Statistics](https://github.com/sit-2021-int214/033-Customer-Personality-Analysis/tree/main/term_assignment/final_assignment)
 
 ## Resources
